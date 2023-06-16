@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["@types"]
+  },
+  "include": [
+    "components/**/*.ts",
+    "components/**/*.d.ts",
+    "components/**/*.vue",
+    "**/*.vue"
+  ],
+  "exclude": ["node_modules"]
+}
