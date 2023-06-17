@@ -1,15 +1,16 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import { docTransform } from "./plugins/docTransform";
+import path from 'path'
+import { defineConfig } from 'vite'
+import { docTransform } from './plugins/docTransform'
 
 export default defineConfig({
   server: {
-    port: 8000,
+    port: 8000
   },
   resolve: {
-    extensions: [".mjs", ".js", ".mts", ".ts", ".jsx", ".tsx", ".json"],
+    alias: {
+      '@': path.resolve(__dirname, '.vitepress')
+    },
+    extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']
   },
-  plugins:[
-    docTransform()
-  ]
-});
+  plugins: [docTransform()]
+})

@@ -1,0 +1,7 @@
+{
+    "name": "@fan-design/ui-theme",
+    "version": "1.1.0",
+    "description": "fan design all style global in here",
+    "license": "MIT",
+    "main": "index.scss"
+}

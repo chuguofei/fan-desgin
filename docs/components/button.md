@@ -15,13 +15,3 @@ dasdadas
 button/basic
 
 :::
-
-## 基本用法1
-
-dasdadas
-
-:::demo 我是描述
-
-button/basic
-
-:::

@@ -1,4 +1,3 @@
 <template>
-    button基础的
+  <f-button />
 </template>
-

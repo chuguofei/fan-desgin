@@ -1,0 +1,12 @@
+{
+  "name": "fan-design",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "author": {
+    "name": "guohui"
+  },
+  "license": "MIT"
+}

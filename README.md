@@ -1,4 +1,3 @@
-# fan-desgin
+# fan-design
 
-
-# 一个UI库
+# 一个 UI 库

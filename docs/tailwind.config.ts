@@ -1,9 +1,7 @@
 export default {
-  content: [
-    "./.vitepress/**/*.{html,js,vue,ts,md}",
-  ],
+  content: ['./.vitepress/**/*.{html,js,vue,ts,md}'],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
-};
+  plugins: []
+}
