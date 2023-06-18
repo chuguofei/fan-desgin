@@ -8,3 +8,18 @@
     @content;
   }
 }
+
+// 接着父类
+@mixin when($state, $value: null, $separator: '.') {
+  @at-root {
+    @if #{$value} != null {
+      &#{$separator}#{$state}-#{$value} {
+        @content;
+      }
+    } @else {
+      &-#{$state} {
+        @content;
+      }
+    }
+  }
+}

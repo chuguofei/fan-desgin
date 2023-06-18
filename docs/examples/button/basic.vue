@@ -1,3 +1,3 @@
 <template>
-  <f-button />
+  <f-button>按钮</f-button>
 </template>

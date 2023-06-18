@@ -3,7 +3,7 @@
 @use 'common/var.scss' as *;
 @use 'mixins/mixins.scss' as *;
 
-@include joinClass(button) {
+@include joinClass(btn) {
   position: relative;
   display: flex;
   align-items: center;
@@ -16,7 +16,11 @@
   user-select: none;
   vertical-align: middle;
   -webkit-appearance: none;
-  transform:  0.1s;
+  transition: 0.1s;
+}
 
-  color: red;
+@include joinClass(btn-type) {
+  @include when(dark, null, '-') {
+    background-color: red;
+  }
 }
