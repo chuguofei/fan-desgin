@@ -1,3 +1,22 @@
-.f-button {
-    background-color: red;
+@use 'sass:map';
+
+@use 'common/var.scss' as *;
+@use 'mixins/mixins.scss' as *;
+
+@include joinClass(button) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: map.get($input-height, 'default');
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  transform:  0.1s;
+
+  color: red;
 }
