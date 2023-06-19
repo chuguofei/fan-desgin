@@ -17,10 +17,12 @@
   vertical-align: middle;
   -webkit-appearance: none;
   transition: 0.1s;
-}
 
-@include joinClass(btn-type) {
-  @include when(dark, null, '-') {
-    background-color: red;
+  @include m(status) {
+    @each $type in (primary, success, warning, danger) {
+      @include m($type) {
+        background-color: red;
+      }
+    }
   }
 }
