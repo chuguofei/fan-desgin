@@ -4,6 +4,12 @@ importers:
 
   .:
     dependencies:
+      '@fan-design/constants':
+        specifier: workspace:^
+        version: link:packages/fan-constants
+      '@fan-design/utils':
+        specifier: workspace:^
+        version: link:packages/fan-utils
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -87,6 +93,8 @@ importers:
 
   packages/fan-components: {}
 
+  packages/fan-constants: {}
+
   packages/fan-eslint-config:
     dependencies:
       '@typescript-eslint/eslint-plugin':
@@ -139,7 +147,25 @@ importers:
         specifier: ^8.18.0
         version: 8.43.0
 
+  packages/fan-hooks:
+    dependencies:
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.4
+
   packages/fan-theme: {}
+
+  packages/fan-utils:
+    dependencies:
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.4
+
+  packages/utils:
+    dependencies:
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.4
 
 packages:
 

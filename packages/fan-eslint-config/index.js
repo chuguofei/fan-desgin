@@ -266,13 +266,13 @@ module.exports = {
      * @see Overview https://typescript-eslint.io/rules/
      */
     // 规定数组类型定义方式 https://typescript-eslint.io/rules/array-type
-    '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/array-type': 'off',
     // 禁止使用大写 String、Number 定义类型 https://typescript-eslint.io/rules/ban-types
     '@typescript-eslint/ban-types': 'off', // beta
     // 不允许尾随逗号 https://typescript-eslint.io/rules/comma-dangle
     '@typescript-eslint/comma-dangle': 'error',
     // 强制使用 interface 定义类型 https://typescript-eslint.io/rules/consistent-type-definitions
-    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    '@typescript-eslint/consistent-type-definitions': ['off', 'interface'],
     // 自定义对象类型样式 https://typescript-eslint.io/rules/consistent-indexed-object-style
     '@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
     // !禁止使用后缀运算符的非空断言 https://typescript-eslint.io/rules/no-non-null-assertion/

@@ -1,44 +1,46 @@
 {
-    "name": "fan-design",
-    "version": "0.0.1",
-    "private": true,
-    "workspaces": [
-        "packages/*",
-        "docs"
-    ],
-    "description": "this is fan-design",
-    "keywords": [],
-    "license": "ISC",
-    "author": "guihui",
-    "scripts": {
-        "docs:dev": "pnpm run -C docs docs:dev",
-        "format": "prettier --write --cache .",
-        "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
-        "lint:fix": "pnpm run lint --fix"
-    },
-    "dependencies": {
-        "vue": "^3.3.4"
-    },
-    "devDependencies": {
-        "@fan-design/eslint-config": "workspace:^",
-        "@fan-design/ui-theme": "workspace:^",
-        "@types/node": "^20.3.1",
-        "@types/sass": "^1.45.0",
-        "chalk": "^4.1.2",
-        "consola": "^3.1.0",
-        "eslint": "^8.43.0",
-        "eslint-define-config": "^1.20.0",
-        "husky": "^8.0.3",
-        "lint-staged": "^13.2.2",
-        "prettier": "^2.8.8",
-        "sass": "^1.63.4",
-        "vite": "^4.3.9",
-        "vue-tsc": "^1.8.0"
-    },
-    "engines": {
-        "node": ">= 16"
-    },
-    "lint-staged": {
-        "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
-    }
+  "name": "fan-design",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
+  "description": "this is fan-design",
+  "keywords": [],
+  "license": "ISC",
+  "author": "guihui",
+  "scripts": {
+    "docs:dev": "pnpm run -C docs docs:dev",
+    "format": "prettier --write --cache .",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix"
+  },
+  "dependencies": {
+    "@fan-design/constants": "workspace:^",
+    "@fan-design/utils": "workspace:^",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@fan-design/eslint-config": "workspace:^",
+    "@fan-design/ui-theme": "workspace:^",
+    "@types/node": "^20.3.1",
+    "@types/sass": "^1.45.0",
+    "chalk": "^4.1.2",
+    "consola": "^3.1.0",
+    "eslint": "^8.43.0",
+    "eslint-define-config": "^1.20.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.4",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.8.0"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
+  }
 }
