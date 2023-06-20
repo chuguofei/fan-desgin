@@ -4,7 +4,9 @@ export type EqPropInputDefault<Required extends boolean, Default> = Required ext
   ? () => Default
   : (() => Default) | Default;
 
-export type EqPropInput<Type, Required extends boolean, Value, Validator , Default> = {
+export type IfEpProp<T, Y, N> = T extends { [epPropKey]: true } ? Y : N;
+
+export type EqPropInput<Type, Required extends boolean, Value, Validator, Default> = {
   // 类型
   type?: Type;
   // 是否必填

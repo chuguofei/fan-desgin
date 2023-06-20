@@ -218,7 +218,7 @@ module.exports = {
     // 禁止 <template v-for> 放置在子元素上的键 https://eslint.vuejs.org/rules/no-v-for-template-key-on-child.html
     'vue/no-v-for-template-key-on-child': 'error',
     // 强制从 vue 导入，而不是从 @vue/* 导入 https://eslint.vuejs.org/rules/prefer-import-from-vue.html
-    'vue/prefer-import-from-vue': 'error',
+    'vue/prefer-import-from-vue': 'off',
     // 要求控制里面内容的显示 <transition> https://eslint.vuejs.org/rules/require-toggle-inside-transition.html
     'vue/require-toggle-inside-transition': 'error',
     // 执行有效v-is指令 https://eslint.vuejs.org/rules/valid-v-is.html
@@ -288,7 +288,7 @@ module.exports = {
     // 不可以有 require https://typescript-eslint.io/rules/no-var-requires/
     '@typescript-eslint/no-var-requires': 'error',
     // 带有默认值的函数参数在最后 https://typescript-eslint.io/rules/default-param-last
-    '@typescript-eslint/default-param-last': 'error',
+    '@typescript-eslint/default-param-last': 'off',
     // 必须标记函数返回值 https://typescript-eslint.io/rules/explicit-function-return-type
     '@typescript-eslint/explicit-function-return-type': 'off',
     // 不允许不必要的分号 https://typescript-eslint.io/rules/no-extra-semi

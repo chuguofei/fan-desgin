@@ -17,12 +17,18 @@
     "lint:fix": "pnpm run lint --fix"
   },
   "dependencies": {
-    "@fan-design/constants": "workspace:^",
-    "@fan-design/utils": "workspace:^",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@fan-design/constants": "workspace:^",
+    "@fan-design/hooks": "workspace:^",
+    "@fan-design/utils": "workspace:^",
+    "@types/lodash-es": "^4.17.7",
+    "@vue/shared": "^3.3.4",
+    "@vueuse/core": "^10.2.0",
+    "lodash-es": "^4.17.21",
     "@fan-design/eslint-config": "workspace:^",
+    "@fan-design/icons": "workspace:^",
     "@fan-design/ui-theme": "workspace:^",
     "@types/node": "^20.3.1",
     "@types/sass": "^1.45.0",

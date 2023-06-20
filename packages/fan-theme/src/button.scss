@@ -2,10 +2,11 @@
 
 @use 'common/var.scss' as *;
 @use 'mixins/mixins.scss' as *;
+@use 'mixins/button' as *;
 
-@include joinClass(btn) {
+@include b(button) {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   height: map.get($input-height, 'default');
@@ -18,11 +19,9 @@
   -webkit-appearance: none;
   transition: 0.1s;
 
-  @include m(status) {
-    @each $type in (primary, success, warning, danger) {
-      @include m($type) {
-        background-color: red;
-      }
+  @each $type in (primary, success, warning, danger) {
+    @include m($type) {
+      @include button-variant($type);
     }
   }
 }

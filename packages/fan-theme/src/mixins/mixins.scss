@@ -1,7 +1,7 @@
 @use './config.scss' as *;
 
 // 拼接类名
-@mixin joinClass($className) {
+@mixin b($className) {
   $name: $namespace + $common-separator + $className !global;
 
   .#{$name} {
@@ -9,26 +9,12 @@
   }
 }
 
-// 接着父类
-@mixin when($state, $value: null, $separator: '.') {
-  @at-root {
-    @if #{$value} != null {
-      &#{$separator}#{$state}-#{$value} {
-        @content;
-      }
-    } @else {
-      &-#{$state} {
-        @content;
-      }
-    }
-  }
-}
-
+// 拼接类型 f-button--loading f-button--disabled
 @mixin m($modifier) {
   $selector: &;
   $currentSelector: '';
   @each $unit in $modifier {
-    $currentSelector: #{$currentSelector + $selector + $unit + ','};
+    $currentSelector: #{$currentSelector + $selector + $modifier-separator + $unit + ','};
   }
 
   @at-root {
