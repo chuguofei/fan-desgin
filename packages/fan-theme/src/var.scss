@@ -1,0 +1,31 @@
+@use 'sass:math';
+
+@use './common/var' as *;
+@use './mixins/var' as *;
+
+:root {
+  @include set-css-var-value('color-white', $color-white);
+  @include set-css-var-value('color-black', $color-black);
+
+  @each $type in $types {
+    @include set-css-color-rgb($type);
+  }
+}
+
+:root {
+  // 系统模式/暗黑模式
+  color-scheme: light;
+
+  @include set-css-var-value('color-white', $color-white);
+  @include set-css-var-value('color-black', $color-black);
+
+  // 设置全局颜色
+  @each $type in $types {
+    @include set-css-color-type($colors, $type);
+  }
+
+  @include set-component-css-var('bg-color', $bg-color);
+  @include set-component-css-var('text-color', $text-color);
+  @include set-component-css-var('border-color', $border-color);
+  @include set-component-css-var('fill-color', $fill-color);
+}

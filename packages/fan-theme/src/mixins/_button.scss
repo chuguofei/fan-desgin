@@ -1,2 +1,23 @@
+@use 'sass:map';
+
+@use './var' as *;
+
 @mixin button-variant($type) {
+  $button-color-types: (
+    '': (
+      'text': (
+        'color',
+        'white'
+      ),
+      'bg-color': (
+        'color': red
+      )
+    )
+  );
+
+  @each $type, $typeMap in $button-color-types {
+    @each $typeColor, $list in $typeMap {
+      @include css-var-from-global(('button', $type, $typeColor), $list);
+    }
+  }
 }

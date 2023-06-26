@@ -1,0 +1,1 @@
+export { default as VPDemo } from './components/vp-demo.vue'; 

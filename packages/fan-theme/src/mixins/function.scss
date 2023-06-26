@@ -1,0 +1,16 @@
+@use './config.scss' as *;
+
+// 拼接类名
+@function joinVarName($list) {
+  $name: '--' + $namespace;
+  @each $item in $list {
+    @if $item != '' {
+      $name: $name + '-' + $item;
+    }
+  }
+  @return $name;
+}
+
+@function getCssVar($args...) {
+  @return var(#{joinVarName($args)});
+}
